@@ -1,0 +1,62 @@
+{
+    "formAttributes": {
+      "action": "/submit",
+      "method": "post"
+    },
+    "formElements": [
+      {
+        "type": "text",
+        "name": "name",
+        "label": "İsim",
+        "id": "name"
+      },
+      {
+        "type": "text",
+        "name": "surname",
+        "label": "Soyisim",
+        "id": "surname"
+      },
+      {
+        "type": "number",
+        "name": "Phone",
+        "label": "Telefon",
+        "id": "phone"
+      },
+      {
+        "type": "email",
+        "name": "email",
+        "label": "E-posta",
+        "id": "emailInput"
+      },
+      {
+        "type": "textarea",
+        "name": "message",
+        "label": "Mesaj",
+        "id": "messageInput"
+      },
+      {
+        "type": "select",
+        "name": "category",
+        "label": "Kategori",
+        "id": "categorySelect",
+        "options": [
+          { "value": "option1", "label": "Seçenek 1" },
+          { "value": "option2", "label": "Seçenek 2" },
+          { "value": "option3", "label": "Seçenek 3" }
+        ]
+      },
+      {
+        "type": "file",
+        "name": "attachment",
+        "label": "Dosya Eki",
+        "id": "attachmentInput"
+      },
+      {
+        "type": "checkbox",
+        "name": "agree",
+        "label": "Şartları Kabul Ediyorum",
+        "id": "agreeCheckbox"
+      }
+    ]
+  }
+  

@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body,
+html {
+  overflow-x: hidden;
+}
+* {
+  @apply font-primary border-none no-underline box-border p-0 m-0;
+}
+img {
+  width: 100%;
+}
+.container {
+  @apply m-auto;
+}
+
+.cta {
+  @apply lg:py-2 lg:px-8 py-2 px-6 bg-third text-white lg:text-lg text-base font-secondary hover:bg-primary inline-block w-max;
+}
+.cta2 {
+  @apply lg:px-6 py-2 px-6 bg-secondary text-white text-base font-secondary hover:bg-primary flex items-center gap-1 m-auto;
+}
+.mobileButton.active + .listItem {
+  @apply flex;
+}
+
+.slick-dots {
+  @apply !bottom-4;
+}
+.slick-dots li {
+  @apply !bg-none !w-auto !h-auto !mx-2;
+}
+.slick-dots li.slick-active button{
+  @apply bg-secondary;
+}
+.slick-dots li button{
+  @apply !w-2 !h-2 !rotate-45 !border-solid !border-[2px] !border-secondary !bg-none !relative !p-0;
+}
+
+.slick-dots li button::before {
+  @apply !hidden;
+}
+.productSlider .slick-slide {
+  @apply text-center
+}
