@@ -18,6 +18,14 @@ const nextConfig = {
           {
             source: "/iletisim",
             destination: "/contact",
+          },
+          {
+            source: "/katalog",
+            destination: "/catalog",
+          },
+          {
+            source: "/katalog/:slug",
+            destination: "/catalog/:slug",
           }
         ],
       };

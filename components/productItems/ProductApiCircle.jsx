@@ -1,10 +1,12 @@
-import { getAllProductApi } from "@/app/api/product/route";
+import * as contentRepo from "@/services/content";
 import CircleProductCard from '../cards/CircleProductCard';
 import TitleType from "../ui/TitleType";
 
 const ProductApiCircle = async ({ sliceLimited, addGridClass,titleText }) => {
-    const detailData = await getAllProductApi();
-    const limited = await detailData.slice(0, sliceLimited);
+    const detailData = await contentRepo.getData({
+        type: 'product'
+    });
+    const limited =  detailData.slice(0, sliceLimited);
     return (
         <div className="w-full lg:mt-20 mt-12">
             <div className='max-w-[1200px] m-auto'>
