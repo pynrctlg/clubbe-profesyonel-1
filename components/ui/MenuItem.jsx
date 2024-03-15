@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { IoIosArrowDown } from "react-icons/io";
 import ButtonType from "./ButtonType";
-import { MenuTree } from "@/app/api/menu/route";
+import { MenuTree } from "@/services/MenuTree";
 
 export default async function MenuItem() {
 

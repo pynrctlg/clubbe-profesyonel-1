@@ -1,7 +1,7 @@
-import CatalogCard from "../cards/CatalogCard";
+import CatalogCard from "../cards/ArticleCard";
 import TitleType from "../ui/TitleType";
 
-export default function Catalog({titleText}) {
+export default function Article({titleText}) {
     return (
         <div className="w-full lg:mt-20 mt-12">
             <div className='container'>

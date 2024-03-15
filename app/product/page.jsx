@@ -1,7 +1,7 @@
 import ProductApiSquare from "@/components/productItems/ProductApiSquare";
 import ProductApiCircle from "@/components/productItems/ProductApiCircle";
 
-export default async function ProductPages() {
+export default async function ProductsPage() {
 
     return (
         <div className="container">

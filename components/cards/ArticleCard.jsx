@@ -3,7 +3,7 @@ import Image from "next/image";
 import TitleType from "../ui/TitleType";
 import ButtonType from "../ui/ButtonType";
 import { BsCalendarDate } from "react-icons/bs";
-export default async function CatalogCard() {
+export default async function ArticleCard() {
 
     const detailData = await contentRepo.getData({
         type: 'article'
@@ -15,7 +15,7 @@ export default async function CatalogCard() {
         <>
             {
                 data.map((item) => (
-                    <div key={item.id} className="max-w-[350px] m-auto">
+                    <div key={item.id} >
                         <div className='flex flex-col shadow-md transition-all w-full pb-2 rounded-lg overflow-hidden'>
                             <div className='overflow-hidden bg-white relative'>
                                 <div className='h-[220px] relative'>

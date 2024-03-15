@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { BsCalendarDate } from "react-icons/bs";
-export default async function CatalogDetail({ data }) {
+export default async function ArticleDetail({ data }) {
 
 
     return (

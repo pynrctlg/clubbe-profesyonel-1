@@ -15,3 +15,20 @@ export const getData = async (filter) => {
         console.log(error);
     }
 };
+
+export const search = async (str) => {
+    try {
+        const options = {
+            type: 'websearch',
+            language: 'turkish'
+        };
+        const { data, error } = await repo.getQuery()
+            .select()
+            .textSearch('content', str, options);
+
+        return data;
+
+    } catch (error) {
+        console.log(error);
+    }
+};

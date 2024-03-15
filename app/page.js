@@ -5,7 +5,7 @@ import ProductApiSquare from "@/components/productItems/ProductApiSquare";
 import ProductApiCircle from "@/components/productItems/ProductApiCircle";
 import ProductSlider from "@/components/sliders/ProductSlider";
 import BrandsSlider from "@/components/sliders/BrandsSlider";
-import Catalog from "@/components/catalog/Catalog";
+import Catalog from "@/components/article/Article";
 import Discount from "@/components/customers/Discount";
 
 export default function Home() {

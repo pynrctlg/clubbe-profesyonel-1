@@ -1,7 +1,7 @@
 // import { getAllProductApi } from "@/app/api/product/route";
 import * as contentRepo from "@/services/content";
-import CatalogDetail from "@/components/catalog/CatalogDetail"
-export default async function CatalogPages({ params }) {
+import CatalogDetail from "@/components/article/ArticleDetail"
+export default async function ArticleDetailPage({ params }) {
 
     // const detailData = await getAllProductApi(params.id)
     const detailData = await contentRepo.getData({

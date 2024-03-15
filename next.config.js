@@ -20,12 +20,12 @@ const nextConfig = {
             destination: "/contact",
           },
           {
-            source: "/katalog",
-            destination: "/catalog",
+            source: "/makale",
+            destination: "/article",
           },
           {
-            source: "/katalog/:slug",
-            destination: "/catalog/:slug",
+            source: "/makale/:slug",
+            destination: "/makale/:slug",
           }
         ],
       };
