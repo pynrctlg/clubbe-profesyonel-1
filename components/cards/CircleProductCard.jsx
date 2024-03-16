@@ -25,7 +25,7 @@ const CircleProductCard = ({ data }) => {
                         <h3 className='font-primary text-primary min-h-[48px]'>{data.title}</h3>
                         <div className='flex justify-center gap-4'>
                             <span className='flex items-center text-sm'>{data.attributes.price} <FaTurkishLiraSign className='text-xs' /></span>
-                            <span className='flex items-center text-sm text-gray-400 line-through'>100 <FaTurkishLiraSign className='text-xs' /></span>
+                            <span className='flex items-center text-sm text-gray-400 line-through'>{data.attributes.without_discount} <FaTurkishLiraSign className='text-xs' /></span>
                         </div>
 
                     </div>

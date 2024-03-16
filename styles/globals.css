@@ -29,37 +29,34 @@ img {
 
 .slick-dots {
   @apply !bottom-4;
-  li {
-    @apply !bg-none !w-auto !h-auto !mx-2;
-    &.slick-active button {
-      @apply bg-secondary;
-    }
-    button {
-      @apply !w-2 !h-2 !rotate-45 !border-solid !border-[2px] !border-secondary !bg-none !relative !p-0;
-      &::before {
-        @apply !hidden;
-      }
-    }
-  }
 }
 
+.slick-dots li{
+  @apply !bg-none !w-auto !h-auto !mx-2;
+}
+.slick-dots li.slick-active button{
+  @apply bg-secondary;
+}
+.slick-dots li button{
+  @apply !w-2 !h-2 !rotate-45 !border-solid !border-[2px] !border-secondary !bg-none !relative !p-0;
+}
+.slick-dots li button::before{
+  @apply !hidden;
+}
 .productSlider .slick-slide {
   @apply text-center;
 }
 .menuItems{
   @apply hidden lg:block;
-  &.active{
-    @apply h-[calc(100vh_-_62px)] lg:h-auto top-[62px] absolute lg:relative lg:top-auto w-full bg-white block;
-  }
+}
+.menuItems.active{
+  @apply h-[calc(100vh_-_62px)] lg:h-auto top-[62px] absolute lg:relative lg:top-auto w-full bg-white block;
 }
 
-.subMenuMobil{
-  &.active{
-    .subMenuContent{
-      @apply block 
-    }
-  }
-  .subMenuContent{
-    @apply hidden;
-  }
+.subMenuMobil .active .subMenuContent{
+  @apply block;
+  
+}
+.subMenuMobil .subMenuContent{
+  @apply hidden;
 }
