@@ -43,7 +43,7 @@ export default function Social() {
     ]
 
     return (
-        <ul className="flex gap-5 text-2xl mx-auto lg:mx-0 my-3">
+        <ul className="flex gap-5 text-2xl mx-auto lg:mx-0 my-3 justify-center">
             {
                 socialList.map((items) => (
                     <li key={items.id}>

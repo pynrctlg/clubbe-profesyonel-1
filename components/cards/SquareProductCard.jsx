@@ -25,7 +25,7 @@ const SquareProductCard = ({ data }) => {
                         }
 
                     </div>
-                    <div className='w-full flex gap-2 border-t-[1px] min-h-[77px] py-3 border-solid  border-slate-200 items-center justify-between px-4 pb-4'>
+                    <div className='w-full flex gap-2 min-h-[77px] py-3 border-t-[1px] border-solid  border-slate-200 items-center justify-between px-4 pb-4'>
                         <TitleType titleType="h3" addClass="!font-primary !text-left font-normal !text-secondary !text-base line-clamp-2">{data.title}</TitleType>
                         <ButtonType url={`/urunler/${data.slug}`} addClass="!py-1 !px-3 !text-base h-max" title={data.title}>İncele</ButtonType>
                     </div>

@@ -1,9 +1,9 @@
 import Link from "next/link";
 import { FaPhoneSquareAlt ,FaWhatsapp } from "react-icons/fa";
 
-export default function PhoneWp() {
+export default function PhoneWp({addClass}) {
     return (
-        <ul className="flex gap-5 text-md mx-auto lg:mx-0 my-3">
+        <ul className={`flex gap-5 text-md mx-auto lg:mx-0 my-3 ${addClass}`}>
             <li>
                 <Link href="tel:+905544444444" className="flex items-center gap-2 font-primary hover:text-third transition-all"><FaPhoneSquareAlt /><span>0554 444 44 44</span></Link>
             </li>
