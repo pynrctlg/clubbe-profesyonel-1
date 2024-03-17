@@ -1,9 +1,9 @@
-import * as contentRepo from "@/services/content";
+import { getData } from "@/services/content";
 import CircleProductCard from '../cards/CircleProductCard';
 import TitleType from "../ui/TitleType";
 
 const ProductApiCircle = async ({ sliceLimited, addGridClass,titleText }) => {
-    const detailData = await contentRepo.getData({
+    const detailData = await getData({
         type: 'product'
     });
     const limited =  detailData.slice(0, sliceLimited);

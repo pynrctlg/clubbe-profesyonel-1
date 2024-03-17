@@ -7,6 +7,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Navigation, Pagination } from 'swiper/modules';
 
+
 export default function ProductSlider() {
 
     const pagination = {
@@ -21,6 +22,8 @@ export default function ProductSlider() {
             <div className="container productSlider">
                 <TitleType titleType="h2" addClass="mb-10">Trend Ürünler</TitleType>
                 <Swiper className="container productSlider" navigation={navigation} pagination={pagination} modules={[Navigation, Pagination]}>
+
+                    
                     <SwiperSlide>
                         1
                     </SwiperSlide>

@@ -1,10 +1,10 @@
-import * as contentRepo from "@/services/content";
+import { getData } from "@/services/content";
 import SquareProductCard from '../cards/SquareProductCard';
 import TitleType from "../ui/TitleType";
 
 const ProductApiSquare = async ({ sliceLimited, addGridClass, titleText, containerClass }) => {
     
-    const detailData = await contentRepo.getData({
+    const detailData = await getData({
         type: 'product'
     });
 
