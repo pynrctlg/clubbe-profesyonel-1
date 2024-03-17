@@ -1,46 +1,72 @@
 'use client';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper/modules';
+import 'swiper/css';
 import Image from "next/image";
-import Slider from "react-slick";
 
 export default function BrandsSlider() {
-  const settings = {
-    dots: false,
-    infinite: true,
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    autoplay: true,
-    speed: 600,
-    autoplaySpeed: 3000,
-  };
+  const brandListImage = [
+    {
+      id: "1",
+      name: "marka 1",
+      image: '/brands/b1.png'
+    },
+    {
+      id: "2",
+      name: "marka 2",
+      image: '/brands/b2.png'
+    },
+    {
+      id: "3",
+      name: "marka 3",
+      image: '/brands/b3.png'
+    },
+    {
+      id: "4",
+      name: "marka 4",
+      image: '/brands/b4.png'
+    },
+    {
+      id: "5",
+      name: "marka 5",
+      image: '/brands/b5.png'
+    }
+  ]
   return (
-    <div className="slider-container lg:mt-20 mt-12 brandsSlider">
-      <Slider {...settings}>
-        <div>
-          <div className="w-[170px] h-[93px] relative m-auto">
-            <Image src="/brands/b1.png" fill className="object-contain" alt="brands 1" />
-          </div>
-        </div>
-        <div>
-          <div className="w-[170px] h-[93px] relative m-auto">
-            <Image src="/brands/b2.png" fill className="object-contain" alt="brands 2" />
-          </div>
-        </div>
-        <div>
-          <div className="w-[170px] h-[93px] relative m-auto">
-            <Image src="/brands/b3.png" fill className="object-contain" alt="brands 3" />
-          </div>
-        </div>
-        <div>
-          <div className="w-[170px] h-[93px] relative m-auto">
-            <Image src="/brands/b4.png" fill className="object-contain" alt="brands 4" />
-          </div>
-        </div>
-        <div>
-          <div className="w-[170px] h-[93px] relative m-auto">
-            <Image src="/brands/b5.png" fill className="object-contain" alt="brands 5" />
-          </div>
-        </div>
-      </Slider>
-    </div>
+    <>
+      <Swiper
+        slidesPerView={2}
+        spaceBetween={30}
+        loop={true}
+        autoplay={{
+          delay: 2000,
+          disableOnInteraction: false,
+        }}
+        modules={[Autoplay]}
+        breakpoints={{
+          640: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          }
+        }}
+        className="slider-container lg:mt-20 mt-12 brandsSlider"
+      >
+        {
+          brandListImage.map((item) => (
+            <SwiperSlide key={item.id}>
+              <div className="w-[170px] h-[93px] relative m-auto">
+                <Image src={item.image} fill className="object-contain" alt={item.name} />
+              </div>
+            </SwiperSlide>
+          ))
+        }
+
+
+      </Swiper>
+    </>
   )
 }

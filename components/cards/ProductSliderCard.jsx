@@ -36,6 +36,7 @@ export default async function ProductSliderCard() {
                             </div>
                         </div>
                     </div>
+
                 ))
             }
         </>

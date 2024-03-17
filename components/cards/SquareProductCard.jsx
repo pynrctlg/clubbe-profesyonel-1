@@ -16,7 +16,7 @@ const SquareProductCard = ({ data }) => {
                         </span>
                         {
                             data.tags?.includes("is:discount") ?
-                                <span className='absolute top-0 right-0 p-2 bg-secondary text-white text-xs'>İndirimde</span>
+                                <span className='absolute top-0 right-0 p-2 bg-secondary text-white text-xs'>İndirimli</span>
                                 :
                                 data.tags?.includes("is:new") ?
                                     <span className='absolute top-0 right-0 p-2 bg-third text-white text-xs'>Yeni</span>
