@@ -23,15 +23,15 @@ export default function HomeSlider() {
     <Swiper className="relative bg-[#F2F0FF] !min-h-[500px] lg:h-[calc(100vh_-_122px)] h-[calc(100vh_-_61px)]" navigation={navigation} pagination={pagination} modules={[Navigation, Pagination]} >
       <SwiperSlide>
       <div className="flex min-h-full flex-col-reverse lg:flex-row gap-5 justify-center lg:justify-between items-center container">
-            <div className="text-center lg:text-left px-3 lg:px-0 flex flex-col gap-4 max-w-md font-bold">
-              <TitleType titleType="h3" addClass="text-third line-clamp-1 !text-base !text-left">Best Furniture For Your Castle....</TitleType>
+            <div className="text-center lg:text-left px-3 lg:px-0 flex flex-col gap-3 lg:gap-4 max-w-md font-bold">
+              <TitleType titleType="h3" addClass="text-third line-clamp-1 !text-base !text-center lg:!text-left">Best Furniture For Your Castle....</TitleType>
               <TitleType addClass="line-clamp-3" titleType="h1">
                 New Furniture Collection
                 Trends in 2024
                 New Furniture Collection
                 Trends in 2024
               </TitleType>
-              <p className="text-base lg:text-base text-[#8A8FB9] line-clamp-2 lg:line-clamp-4">
+              <p className="text-center lg:text-left text-base lg:text-base text-[#8A8FB9] line-clamp-2 lg:line-clamp-4">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing
                 in phasellus non in justo.
                 yerde!
@@ -60,15 +60,15 @@ export default function HomeSlider() {
       </SwiperSlide>
       <SwiperSlide>
       <div className="flex min-h-full flex-col-reverse lg:flex-row gap-5 justify-center lg:justify-between items-center container">
-            <div className="text-center lg:text-left px-3 lg:px-0 flex flex-col gap-4 max-w-md font-bold">
-              <TitleType titleType="h3" addClass="text-third line-clamp-1 !text-base !text-left">Best Furniture For Your Castle....</TitleType>
+            <div className="text-center lg:text-left px-3 lg:px-0 flex flex-col gap-3 lg:gap-4 max-w-md font-bold">
+              <TitleType titleType="h3" addClass="text-third line-clamp-1 !text-base !text-center lg:!text-left">Best Furniture For Your Castle....</TitleType>
               <TitleType addClass="line-clamp-3" titleType="h1">
                 New Furniture Collection
                 Trends in 2024
                 New Furniture Collection
                 Trends in 2024
               </TitleType>
-              <p className="text-base lg:text-base text-[#8A8FB9] line-clamp-2 lg:line-clamp-4">
+              <p className="text-center lg:text-left text-base lg:text-base text-[#8A8FB9] line-clamp-2 lg:line-clamp-4">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing
                 in phasellus non in justo.
                 yerde!

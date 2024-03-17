@@ -18,15 +18,15 @@ export default async function MenuItem() {
                                 items.children !== false ?
                                     (
                                         <SubMenuMobilButton menuHide="toggleMenu">
-                                            <Link href={`/${items.link}`} replace={true} className="hover:text-primary inline-block lg:flex items-center gap-2">{items.name}<IoIosArrowDown className="mt-1 hidden lg:block" /></Link>
+                                            <Link href={`/${items.link}`} className="hover:text-primary inline-block lg:flex items-center gap-2">{items.name}<IoIosArrowDown className="mt-1 hidden lg:block" /></Link>
                                             <div className="w-full relative lg:absolute top-0 mt-5 lg:mt-0 lg:top-[100%] left-0 bg-slate-50 lg:group-hover:block z-50 shadow-md subMenuContent">
-                                                <div className="container p-4 lg:px-10 lg:py-7">
+                                                <div className="container p-3 lg:px-10 lg:py-7">
                                                     <div className="flex justify-between">
                                                         <ul>
-                                                            <li><h2 className="font-third text-2xl">KATAGORİLER</h2></li>
+                                                            <li><h2 className="font-third text-xl lg:text-2xl">KATAGORİLER</h2></li>
                                                             {items.children.map(subitems => (
-                                                                <li key={`${items.id}-${subitems.id}`} className="w-full inline-block py-2">
-                                                                    <Link href={`/${items.link}/${subitems.link}`} className="hover:text-primary">{subitems.name}</Link>
+                                                                <li key={`${items.id}-${subitems.id}`} className="w-full inline-block pb-2 lg:py-2">
+                                                                    <Link href={`/${items.link}/${subitems.link}`} className="hover:text-primary text-sm leading-4">{subitems.name}</Link>
                                                                 </li>
                                                             ))}
                                                         </ul>

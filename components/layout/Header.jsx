@@ -27,7 +27,7 @@ export default function Header() {
                             <div className="hidden lg:block w-full lg:w-auto text-left">
                                 <Logo />
                             </div>
-                            <MenuItem />
+                            <MenuItem/>
                         </div>
                         <div className="gap-2 flex absolute bottom-2 lg:bottom-auto w-full pr-2 lg:pr-0 lg:w-auto left-0 lg:left-auto lg:relative justify-end">
                             <Search />
