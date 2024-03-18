@@ -17,7 +17,7 @@ export default async function ProductSliderCard() {
                             <div className='group flex flex-col gap-4 transition-all'>
                                 <div className='p-4 overflow-hidden bg-white rounded-full shadow-[-5px_8px_0px_#9575e5] relative'>
                                     <div className='w-[170px] h-[170px] sm:w-[220px] sm:h-[220px] relative'>
-                                        <Image src={item.image} className='object-contain group-hover:scale-125 group-hover:rotate-6 transition-all' fill alt={item.title} />
+                                        <Image src={item.image?.thumb} className='object-contain group-hover:scale-125 group-hover:rotate-6 transition-all' fill alt={item.title} />
                                     </div>
                                     {
                                         item.id === 1 ?

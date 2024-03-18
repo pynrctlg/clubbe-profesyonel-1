@@ -15,11 +15,11 @@ const ProductApiCircle = async ({ sliceLimited, addGridClass,titleText }) => {
                     {
                         sliceLimited ?
                             limited.map((item) => (
-                               <CircleProductCard key={item.id} data={item}/>
+                               <CircleProductCard key={item.id} item={item}/>
                             ))
                             :
                             detailData.map((item) => (
-                                <CircleProductCard key={item.id} data={item}/>
+                                <CircleProductCard key={item.id} item={item}/>
                             ))
                     }
                 </div>

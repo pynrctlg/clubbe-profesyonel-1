@@ -22,10 +22,7 @@ export default function ProductSlider() {
             <div className="container productSlider">
                 <TitleType titleType="h2" addClass="mb-10">Trend Ürünler</TitleType>
                 <Swiper className="container productSlider" navigation={navigation} pagination={pagination} modules={[Navigation, Pagination]}>
-
-                    
                     <SwiperSlide>
-                        1
                     </SwiperSlide>
                     <SwiperSlide>
                         2

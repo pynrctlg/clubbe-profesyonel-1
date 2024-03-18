@@ -1,5 +1,5 @@
-import ProductApiSquare from "@/components/productItems/ProductApiSquare";
-import ProductApiCircle from "@/components/productItems/ProductApiCircle";
+import ProductApiSquare from "@/components/products/ProductApiSquare";
+import ProductApiCircle from "@/components/products/ProductApiCircle";
 
 export default async function ProductsPage() {
 

@@ -17,11 +17,11 @@ const ProductApiSquare = async ({ sliceLimited, addGridClass, titleText, contain
                     {
                         sliceLimited ?
                             limited.map((item) => (
-                                <SquareProductCard key={item.id} data={item} />
+                                <SquareProductCard key={item.id} item={item} />
                             ))
                             :
                             detailData.map((item) => (
-                                <SquareProductCard key={item.id} data={item} />
+                                <SquareProductCard key={item.id} item={item} />
                             ))
                     }
                 </div>
