@@ -1,10 +1,8 @@
+export default async function ProductDetail({ data }) {
 
-const ProductDetail = ({ data }) => {
     return (
         <div>
-            {data.title}
+            {data?.title}
         </div>
     )
 }
-
-export default ProductDetail

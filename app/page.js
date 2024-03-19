@@ -1,5 +1,5 @@
 import InformationTape from "@/components/customers/InformationTape";
-import HomeSlider from "@/components/sliders/HomeSlider";
+import HomeSliderServer from "@/components/sliders/HomeSliderServer";
 import Newsletter from "@/components/customers/Newsletter";
 import ProductApiSquare from "@/components/products/ProductApiSquare";
 import ProductApiCircle from "@/components/products/ProductApiCircle";
@@ -11,12 +11,12 @@ import Discount from "@/components/customers/Discount";
 export default function Home() {
   return (
     <main>
-      <HomeSlider />
+      <HomeSliderServer />
       <InformationTape />
       <ProductApiSquare sliceLimited="4" titleText="Önerilen Ürünler" />
       <Newsletter />
       <BrandsSlider />
-      <ProductSlider/>
+      <ProductSlider />
       <Catalog titleText="Katalog" />
       <Discount />
       <ProductApiCircle sliceLimited="4" titleText="Yeni Ürünler" />

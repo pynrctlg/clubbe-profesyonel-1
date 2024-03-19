@@ -1,14 +1,18 @@
 import dbContext from './dbContext';
 const repo = dbContext('contents');
 
-export const getData = async (filter) => {
+export const getData = async (filter, limit) => {
     try {
         let match = { ...filter, language_code: 'tr', status: 1 };
 
-        const { data, error } = await repo.getQuery()
-            .select('*')
-            .match(match);
-
+        const query =
+            repo.getQuery()
+                .select('*')
+                .match(match);
+        if (limit) {
+            query.limit(limit);
+        }
+        const { data, error } = await query;
         return data;
 
     } catch (error) {
