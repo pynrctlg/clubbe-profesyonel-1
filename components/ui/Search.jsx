@@ -39,7 +39,7 @@ export default function Search() {
                                     <IoClose className="text-white" />
                                 </button>
                                 <div className="w-full flex min-h-full items-center justify-center flex-col lg:flex-row ">
-                                    <div className="bg-[#F2F0FF] w-full">
+                                    <div className="bg-sixth w-full">
                                         <div className="relative w-full h-[300px] lg:h-[500px] flex items-center">
                                             <Image src="/search-popup.png" className="object-contain !h-4/5 !top-1/2 !-translate-y-1/2" fill alt="ürün ismi" />
                                         </div>

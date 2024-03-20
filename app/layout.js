@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="relative">
         <Header />
-        <div className="lg:pt-[122px] pt-[62px] pb-14 z-40">{children}</div>
+        <main className="lg:pt-[122px] pt-[62px] z-40">{children}</main>
         <Footer />
       </body>
     </html>

@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { FaFacebook, FaInstagram, FaYoutube, FaTwitterSquare, FaLinkedin, FaPinterest } from "react-icons/fa";
 
-export default function Social() {
+export default function Social({addClass}) {
     const socialList = [
         {
             "id": "1",
@@ -47,7 +47,7 @@ export default function Social() {
             {
                 socialList.map((items) => (
                     <li key={items.id}>
-                        <Link href={items.link} target="_blank" className="hover:text-third transition-all">{items.icon}</Link>
+                        <Link href={items.link} target="_blank" className={`hover:text-third transition-all ${addClass ? addClass : ''}`}>{items.icon}</Link>
                     </li>
                 ))
             }

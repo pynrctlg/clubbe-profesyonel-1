@@ -22,7 +22,7 @@ module.exports = {
         third: "#FB2E86",
         fourth: "#7E33E0",
         fifth:'#72718F',
-        sixth:'#F1F0FF'
+        sixth:'#F1F0FF',
       },
     },
     fontFamily: {
