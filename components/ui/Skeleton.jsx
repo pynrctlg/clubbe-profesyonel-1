@@ -1,4 +1,4 @@
-export default function Loading () {
+export default function Skeleton () {
     return (
         <div className="rounded-lg p-4 bg-gray-200 animate-pulse absolute z-40 inset-0 w-full h-full">
             <div className="flex space-x-4 py-6">
