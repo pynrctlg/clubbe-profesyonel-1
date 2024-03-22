@@ -9,7 +9,7 @@ import ButtonType from "../ui/ButtonType";
 import TitleType from "../ui/TitleType";
 import { IoIosArrowDropleftCircle, IoIosArrowDroprightCircle } from 'react-icons/io';
 
-export default function HomeSlider({ children }) {
+export default function HomeSlider({ data }) {
 
   const pagination = {
     clickable: true,
@@ -22,7 +22,7 @@ export default function HomeSlider({ children }) {
 
   return (
     <Swiper className="relative bg-sixth !min-h-[500px] lg:h-[calc(100vh_-_122px)] h-[calc(100vh_-_61px)]" navigation={navigation} pagination={pagination} modules={[Navigation, Pagination]} >
-      {children.map((item) => (
+      {data?.map((item) => (
         <SwiperSlide key={item.id}>
           <div className="flex min-h-full flex-col-reverse lg:flex-row gap-5 justify-center lg:justify-between items-center container">
             <div className="text-center lg:text-left px-3 lg:px-0 flex flex-col gap-3 lg:gap-4 max-w-md font-bold">

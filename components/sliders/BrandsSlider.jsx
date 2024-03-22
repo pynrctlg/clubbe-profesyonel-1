@@ -56,7 +56,7 @@ export default function BrandsSlider() {
         className="slider-container lg:mt-20 mt-12 brandsSlider"
       >
         {
-          brandListImage.map((item) => (
+          brandListImage?.map((item) => (
             <SwiperSlide key={item.id}>
               <div className="w-[170px] h-[93px] relative m-auto">
                 <Image src={item.image} fill className="object-contain" alt={item.name} />

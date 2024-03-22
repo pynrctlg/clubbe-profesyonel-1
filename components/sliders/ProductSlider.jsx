@@ -8,8 +8,8 @@ import { Navigation } from 'swiper/modules';
 import CircleProductCard from "../cards/CircleProductCard";
 
 
-export default function ProductSlider({ children }) {
-
+export default function ProductSlider({ data,sliceLimited }) {
+    const limited = data.slice(0, sliceLimited);
     const navigation = {
         nextEl: ".arrow-next",
         prevEl: ".arrow-prev"
@@ -18,7 +18,7 @@ export default function ProductSlider({ children }) {
     const breakpoints = {
         767: {
             slidesPerView: 2,
-            spaceBetween:20
+            spaceBetween: 20
         },
         991: {
             slidesPerView: 3,
@@ -32,9 +32,9 @@ export default function ProductSlider({ children }) {
             <div className="container productSlider">
                 <TitleType titleType="h2" addClass="mb-10">Trend Ürünler</TitleType>
                 <Swiper className="container" slidesPerView={1} loop={true} spaceBetween={10} navigation={navigation} breakpoints={breakpoints} modules={[Navigation]}>
-                    {children?.map((item) => (
+                    {limited?.map((item) => (
                         <SwiperSlide key={item.id}>
-                            <CircleProductCard item={item}/>
+                            <CircleProductCard item={item} />
                         </SwiperSlide>
                     ))
                     }

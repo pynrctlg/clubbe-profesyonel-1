@@ -1,4 +1,5 @@
-export default function Loading({ addClass }) {
+
+export default function Loading() {
   return (
     <div className="fixed inset-0 z-[99999] w-full h-screen flex items-center justify-center bg-sixth">
       <div className="flex gap-2">

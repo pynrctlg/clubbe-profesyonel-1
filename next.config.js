@@ -25,7 +25,7 @@ const nextConfig = {
           },
           {
             source: "/makale/:slug",
-            destination: "/makale/:slug",
+            destination: "/article/:slug",
           }
         ],
       };
