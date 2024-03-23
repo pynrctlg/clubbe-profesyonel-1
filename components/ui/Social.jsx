@@ -47,7 +47,7 @@ export default function Social({addClass}) {
             {
                 socialList.map((items) => (
                     <li key={items.id}>
-                        <Link href={items.link} target="_blank" className={`hover:text-third transition-all ${addClass ? addClass : ''}`}>{items.icon}</Link>
+                        <Link href={items.link} target="_blank" className={`${addClass ? addClass : ''} hover:text-third transition-all`}>{items.icon}</Link>
                     </li>
                 ))
             }

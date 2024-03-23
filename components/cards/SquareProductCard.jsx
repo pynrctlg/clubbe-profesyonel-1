@@ -7,7 +7,7 @@ import ButtonType from '../ui/ButtonType';
 const SquareProductCard = ({ item }) => {
     return (
 
-        <div className='w-[270px] group flex flex-col gap-4 shadow-md transition-all bg-white m-auto'>
+        <div className='w-[270px] group flex flex-col gap-4 shadow-md transition-all bg-white m-auto rounded-md'>
                     <div className='p-2 overflow-hidden bg-white relative'>
                         <div className='w-full h-[220px] relative'>
                             <Image src={item.image?.thumb} className='object-contain group-hover:scale-125 group-hover:rotate-6 transition-all' fill alt={item.title} />

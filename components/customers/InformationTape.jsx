@@ -1,4 +1,5 @@
 import { FcInTransit, FcApproval, FcDonate, FcConferenceCall } from "react-icons/fc";
+import TextType from "../ui/TextType";
 
 export default function InformationTape() {
 
@@ -8,25 +9,27 @@ export default function InformationTape() {
                 <div className="flex w-[200px] min-h-[200px] px-4 py-7 place-content-center flex-col gap-1 shadow-md">
                     <div className="text-center">
                         <FcInTransit className="text-5xl m-auto mb-2" />
-                        <p className="text-[rgba(26,11,81,.4)] text-base line-clamp-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.</p>
+                        <TextType addClass="text-center line-clamp-5">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.
+                        </TextType>
                     </div>
                 </div>
                 <div className="flex w-[200px] min-h-[200px] px-4 py-7 place-content-center flex-col gap-1 shadow-md">
                     <div className="text-center">
                         <FcApproval className="text-5xl m-auto mb-2" />
-                        <p className="text-[rgba(26,11,81,.4)] text-base line-clamp-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.</p>
+                        <TextType addClass="text-center line-clamp-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.</TextType>
                     </div>
                 </div>
                 <div className="flex w-[200px] min-h-[200px] px-4 py-7 place-content-center flex-col gap-1 shadow-md">
                     <div className="text-center">
                         <FcConferenceCall className="text-5xl m-auto mb-2" />
-                        <p className="text-[rgba(26,11,81,.4)] text-base line-clamp-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.</p>
+                        <TextType addClass="text-center line-clamp-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.</TextType>
                     </div>
                 </div>
                 <div className="flex w-[200px] min-h-[200px] px-4 py-7 place-content-center flex-col gap-1 shadow-md">
                     <div className="text-center">
                         <FcDonate className="text-5xl m-auto mb-2" />
-                        <p className="text-[rgba(26,11,81,.4)] text-base line-clamp-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.</p>
+                        <TextType addClass="text-center line-clamp-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.</TextType>
                     </div>
                 </div>
             </div>

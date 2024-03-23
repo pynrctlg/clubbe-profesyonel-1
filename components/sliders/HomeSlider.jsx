@@ -8,6 +8,7 @@ import Image from "next/image";
 import ButtonType from "../ui/ButtonType";
 import TitleType from "../ui/TitleType";
 import { IoIosArrowDropleftCircle, IoIosArrowDroprightCircle } from 'react-icons/io';
+import TextType from '../ui/TextType';
 
 export default function HomeSlider({ data }) {
 
@@ -30,9 +31,9 @@ export default function HomeSlider({ data }) {
               <TitleType addClass="line-clamp-3" titleType="h1">
                 {item.title}
               </TitleType>
-              <p className="text-center lg:text-left text-base lg:text-base text-[#8A8FB9] line-clamp-2 lg:line-clamp-4">
+              <TextType addClass="text-center lg:text-left text-base lg:text-base text-seventh line-clamp-2 lg:line-clamp-4">
                 {item.content}
-              </p>
+              </TextType>
               <div>
                 <ButtonType url={"/urunler/" + item.slug} title="Ürünler" >Ürünler</ButtonType>
               </div>

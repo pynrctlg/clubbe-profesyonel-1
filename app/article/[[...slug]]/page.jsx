@@ -1,6 +1,6 @@
 import * as contentRepo from "@/services/content";
-import ArticleDetail from "@/containers/Article/Detail";
-import ArticleIndex from "@/containers/Article";
+import ArticleDetail from "@/components/containers/Article/Detail";
+import ArticleIndex from "@/components/containers/Article";
 export default async function Article({ params }) {
 
     const detailData = await contentRepo.getData({

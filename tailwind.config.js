@@ -23,6 +23,7 @@ module.exports = {
         fourth: "#7E33E0",
         fifth:'#72718F',
         sixth:'#F1F0FF',
+        seventh:'#8A8FB9'
       },
     },
     fontFamily: {
@@ -31,5 +32,5 @@ module.exports = {
       third: ["Bebas Neue", "sans-serif"],
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/forms")],
 };

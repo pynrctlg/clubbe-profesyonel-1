@@ -10,7 +10,7 @@ import { HamburgerMenuButton } from "../ui/HamburgerMenuButton";
 
 export default function Header() {
     return (
-        <div className="fixed left-0 top-0 z-30 w-full bg-white h-[62px] lg:h-auto drop-shadow-md lg:drop-shadow-none">
+        <div className="fixed left-0 top-0 z-[99] w-full bg-white h-[62px] lg:h-auto drop-shadow-md lg:drop-shadow-none">
             <div className="block lg:hidden ml-3">
                 <Logo />
             </div>

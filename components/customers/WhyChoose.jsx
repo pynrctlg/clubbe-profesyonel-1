@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import TitleType from "../ui/TitleType";
+import TextType from "../ui/TextType";
 
 
 export default function WhyChoose() {
@@ -43,7 +44,7 @@ export default function WhyChoose() {
         <div className="bg-sixth py-20">
             <div className="container m-auto">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 items-center">
-                <div className="relative h-[250px] lg:h-[400px] lg:mb-0">
+                    <div className="relative h-[250px] lg:h-[400px] lg:mb-0">
                         <Image src="/s1.png" className="object-contain" fill alt="Get Leatest Update By Subscribe" />
                     </div>
                     <div>
@@ -53,20 +54,20 @@ export default function WhyChoose() {
                                 <div className="bg-white px-5 rounded-lg mb-3" key={item.id}>
                                     <button className={`w-full text-left flex justify-between items-center ${item.id === isToggle && 'group'}`} onClick={() => setIsToggle(item.id)}>
                                         <TitleType titleType="h3" addClass="text-primary !text-lg !mb-0 py-5 cursor-pointer">{item.title}</TitleType>
-                                        <IoIosArrowDown  className="group-enabled:rotate-180 transition-all"/>
+                                        <IoIosArrowDown className="group-enabled:rotate-180 transition-all" />
                                     </button>
                                     {
                                         isToggle === item.id &&
-                                        <p className="pb-5 !text-">
+                                        <TextType addClass="pb-5">
                                             {item.text}
-                                        </p>
+                                        </TextType>
                                     }
                                 </div>
                             ))
                         }
 
                     </div>
-                    
+
 
                 </div>
             </div>

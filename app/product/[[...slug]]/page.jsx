@@ -1,5 +1,5 @@
-import ProductIndex from "@/containers/Product";
-import ProductDetail from "@/containers/Product/Detail";
+import ProductIndex from "@/components/containers/Product";
+import ProductDetail from "@/components/containers/Product/Detail";
 import * as contentRepo from "@/services/content";
 
 export default async function Product({ params }) {
@@ -11,13 +11,16 @@ export default async function Product({ params }) {
         type: "product"
     });
 
+
     return (
         <>
             {
                 params.slug ?
                     <ProductDetail data={detailData} />
                     :
-                    <ProductIndex data={data} />
+                     <ProductIndex data={data} />
+
+
             }
         </>
 
