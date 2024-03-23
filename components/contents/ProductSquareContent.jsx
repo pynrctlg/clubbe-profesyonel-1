@@ -18,8 +18,10 @@ export default async function ProductSquareContent({ sliceLimited, titleText, da
 
                             noLimited?.map((item) => (
                                 selected ?
-                                    item.attributes.type === selected &&
-                                    <SquareProductCard key={item.id} item={item} />
+                                    (
+                                        item.attributes.brand === selected || item.attributes.type === selected &&
+                                        <SquareProductCard key={item.id} item={item} />
+                                    )
                                     :
                                     <SquareProductCard key={item.id} item={item} />
                             ))
