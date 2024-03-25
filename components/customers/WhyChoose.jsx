@@ -45,7 +45,9 @@ export default function WhyChoose() {
             <div className="container m-auto">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 items-center">
                     <div className="relative h-[250px] lg:h-[400px] lg:mb-0">
-                        <Image src="/s1.png" className="object-contain" fill alt="Get Leatest Update By Subscribe" />
+                        <Image src="/s1.png" priority className="max-w-[720px] h-[400px] object-contain" width="0"
+                        height="0"
+                        sizes="100vw" alt="Get Leatest Update By Subscribe" />
                     </div>
                     <div>
 

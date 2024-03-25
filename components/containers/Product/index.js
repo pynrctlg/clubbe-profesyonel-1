@@ -9,7 +9,9 @@ export default async function ProductIndex({ data }) {
         paragraphText="En iyi ürünleri burada bulabilirsiniz."
         data={data}
       />
-      <Filter data={data}></Filter>
+      <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <Filter data={data}/>
+      </div>
     </div>
   );
 }

@@ -14,9 +14,7 @@ export default function Contact() {
     };
 
     const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log(formDataValues); // Form verilerini konsola yazdır
-        // Burada form verilerini işleyebilirsiniz
+        e.preventDefault(); 
     };
 
     return (

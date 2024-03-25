@@ -6,7 +6,9 @@ const CircleProductCard = ({ item }) => {
         <Link href={`/urunler/${item.slug}`} title={item.title} className='w-[270px] group flex flex-col gap-4 transition-all m-auto'>
         <div className='p-4 overflow-hidden bg-white rounded-full shadow-[-5px_8px_0px_#9575e5] relative'>
             <div className='w-[220px] h-[220px] relative'>
-                <Image src={item.image?.thumb} className='object-contain group-hover:scale-125 group-hover:rotate-6 transition-all' fill alt={item.title} />
+                <Image src={item.image?.thumb} width="0" priority
+                        height="0"
+                        sizes="100vw" className='w-full h-auto object-contain group-hover:scale-125 group-hover:rotate-6 transition-all' alt={item.title} />
             </div>
             {
                 item.tags?.includes("is:discount") ?

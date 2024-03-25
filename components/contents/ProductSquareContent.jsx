@@ -1,6 +1,6 @@
 import SquareProductCard from '../cards/SquareProductCard';
 import TitleType from "../ui/TitleType";
-export default async function ProductSquareContent({ sliceLimited, titleText, data, addClass, gridAddClass, selected }) {
+export default async function ProductSquareContent({ sliceLimited, titleText, data, addClass, gridAddClass }) {
     const noLimited = data;
     const limited = data.slice(0, sliceLimited);
     return (
@@ -17,13 +17,7 @@ export default async function ProductSquareContent({ sliceLimited, titleText, da
                             :
 
                             noLimited?.map((item) => (
-                                selected ?
-                                    (
-                                        item.attributes.brand === selected || item.attributes.type === selected &&
-                                        <SquareProductCard key={item.id} item={item} />
-                                    )
-                                    :
-                                    <SquareProductCard key={item.id} item={item} />
+                                <SquareProductCard key={item.id} item={item} />
                             ))
                     }
                 </div>

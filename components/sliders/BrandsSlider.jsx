@@ -59,7 +59,9 @@ export default function BrandsSlider() {
           brandListImage?.map((item) => (
             <SwiperSlide key={item.id}>
               <div className="w-[170px] h-[93px] relative m-auto">
-                <Image src={item.image} fill className="object-contain" alt={item.name} />
+                <Image src={item.image}  width="0"
+                        height="0"
+                        sizes="100vw" priority className="object-contain w-auto h-auto" alt={item.name} />
               </div>
             </SwiperSlide>
           ))

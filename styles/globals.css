@@ -13,6 +13,9 @@ html {
 img {
   width: 100%;
 }
+:root {
+  scroll-padding: 0;
+}
 .container {
   @apply m-auto;
 }

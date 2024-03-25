@@ -18,7 +18,9 @@ export default async function ArticleCard() {
                     <div key={item.id} className='flex flex-col shadow-md transition-all w-full pb-2 rounded-lg overflow-hidden'>
                         <div className='overflow-hidden bg-white relative'>
                             <div className='h-[220px] relative'>
-                                <Image src={item.image?.thumb} className='object-cover transition-all' fill alt={item.title} />
+                                <Image src={item.image?.thumb} width="0" priority
+                                    height="0"
+                                    sizes="100vw" className='w-full h-auto object-contain group-hover:scale-125 group-hover:rotate-6 transition-all' alt={item.title} />
                             </div>
                         </div>
                         <div className='w-full flex flex-col gap-2 border-t-[1px] min-h-[77px] py-3 border-solid  border-slate-200 place-content-start px-4 pb-4'>
